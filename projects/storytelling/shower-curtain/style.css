@@ -1,0 +1,8 @@
+img{
+    max-width: 700px;
+}
+.grid-container{
+    display:flex;
+    flex-wrap: nowrap;
+    gap: -500px ;
+}
