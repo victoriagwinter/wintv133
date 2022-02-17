@@ -1,0 +1,58 @@
+html {
+    font-family: Heebo;
+    background-color:black;
+    
+  }
+  header{
+      height: 100vh;
+      border: 1px solid rgb(0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .title{
+      text-align: center;
+      font-size: 144px;
+      text-transform: uppercase;
+      /* border: 1 solid salmon; */
+      margin: 0;
+      line-height: 0.9;
+      font-weight: 900;
+      letter-spacing: -0.05%;
+      font-style: italic;
+      text-shadow: 9px 7px red;
+
+  }
+div.info{
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    padding: 20px;
+    background-image: url(https://static.wikia.nocookie.net/onepiece/images/6/6b/Slide_1_preview.png/revision/latest/scale-to-width-down/860?cb=20210905184758);
+    background-size: cover;
+    height: 100%
+}
+ul,li,h1{
+    /* border: 1px dashed blue */
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+h1{
+    /* text-align: right; */
+    max-width: 50%;
+    margin-left: auto;
+    text-transform: uppercase;
+    margin-left: auto;
+    color: yellow;
+    text-indent: -2em;
+    font-style: italic;
+}
+article{
+    color: white;
+}
+h2{
+    font-family: monospace;
+}
