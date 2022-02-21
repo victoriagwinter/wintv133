@@ -1,0 +1,50 @@
+
+body {
+    font-family: Roboto Mono;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(226, 134, 235);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 5vw;
+
+  }
+  
+  h1 {
+    font-size: 15px;
+    font-weight: 1000;
+    margin: 8;
+    text-transform: uppercase;
+  }
+  
+  .entries {
+    margin-bottom: 40px;
+    letter-spacing: 7px;
+  }
+  
+  .heading {
+    margin-bottom: 60px;
+    letter-spacing: 7px;
+  }
+  
+  .chapter {
+    letter-spacing: 5px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .page {
+    margin-top: 10px;
+    letter-spacing: 5px;
+  }
+  
+  
+  span {
+    display: block;
+  }

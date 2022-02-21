@@ -1,0 +1,40 @@
+
+body {
+    color: white;
+    background-color: black;
+    font-family: Roboto Mono;
+  }
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .links {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 0.4;
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-size: 7vw;
+    text-align: right;
+  }
+  
+  a {
+    color:rgb(226, 134, 235);
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    margin-bottom: 36px;
+  }
+  
+  a:hover {
+    border-bottom: 1px dotted;
+  }

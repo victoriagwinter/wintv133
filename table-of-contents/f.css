@@ -1,0 +1,76 @@
+
+
+body {
+  font-family: Roboto Mono;
+  font-size: 15px;
+  color: black;
+  background-color:  rgb(226, 134, 235);
+
+  
+}
+p:hover{
+  color: rgb(226, 134, 235);
+}
+.entries:hover{
+  color: rgb(226, 134, 235);
+}
+.heading:hover{
+  color: rgb(226, 134, 235);
+}
+.chapter:hover{
+  color: rgb(226, 134, 235);
+}
+
+.wrapper {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(6,1fr);
+  justify-content: space-between;
+  color: white;
+  column-gap: 5px;
+  position: relative;
+  z-index: 0;
+  margin-top: -450px;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 90px;
+  max-width: 100vw;
+  margin: 0;
+  font-weight: 2000;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
+}
+h1:hover{
+  color: rgb(226, 134, 235);
+}
+
+.entries {
+  margin-bottom: 40px;
+  font-weight: lighter;
+}
+
+.heading {
+  margin-bottom: 60px;
+}
+
+.chapter {
+  text-transform:lowercase;
+}
+
+p {
+  margin: 0;
+}
+
+.page {
+  margin-top: 5px;
+}
+
+
+span {
+  display: block;
+}
