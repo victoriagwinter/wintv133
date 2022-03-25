@@ -1,0 +1,251 @@
+html {
+    font-size: 20px;
+  }
+  
+  body {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 6rem 1rem;
+  }
+  
+  h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+    margin-bottom: 2.25rem;
+    font-family: Red Hat Mono;
+    color: rgb(132, 90, 170);
+  }
+  
+  p {
+    line-height: 1.5;
+    font-family: Red Hat Mono;
+    color: rgb(132, 90, 170);
+  }
+  
+  sup {
+    font-size: 0.5rem;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  
+  blockquote {
+    font-family: Red Hat Mono;
+    color: rgb(132, 90, 170);
+    font-weight: 200;
+    font-size: clamp(1.25rem, 3vw, 2.25rem);
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    background: white;
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.9s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* section{
+    /* min-height: 100vh; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+} */
+/* .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0
+}
+.reveal.active{
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1
+} */
+section {
+    position: relative;
+      height: 120vh;
+      width: 100%;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 10%;
+  }
+  
+  section .section-title {
+      position: relative;
+      font-size: 2.4rem;
+  }
+  
+  section .section-title::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      background: #f1c40f;
+      transition: 500ms ease-in-out;
+  }
+  
+  .section-title.revealed::before {
+      width: 0;
+  }
+  
+  section .section-desc {
+      color: #a8a8a8;
+      text-align: center;
+      transform: translateY(32px);
+      opacity: 0;
+      transition: .8s ease-out;
+  }
+  
+  .section-desc.faded-in {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  mark {
+    --color1: rgb(253, 255, 157);
+    --color2: rgb(255, 254, 177);
+    --bg-height: 40%;
+      
+    all: unset;
+    background-image: linear-gradient(var(--color1), var(--color2));
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 var(--bg-height);
+    animation: highlight 500ms 1 ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  }
+  
+  
+  @keyframes highlight {
+    to {
+      background-size: 100% var(--bg-height);
+    }
+  }
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(132, 90, 170); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
