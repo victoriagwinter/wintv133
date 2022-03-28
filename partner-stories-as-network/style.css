@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(-25deg, #fffae8, #e2c590, #c5b36b, #b16b4f);
+    animation: gradient 25s ease infinite;
+     background-size: 700% 700%; 
+    margin: 0;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1{
+    font-size: 100px;
+    z-index: 1;
+    position: relative;
+}
+h2{
+    z-index: 2;
+    font-size: 50px;
+    position:relative;
+    z-index:2;
+    padding: -5em;
+    margin-top: -5vw;
+}
+a{
+    z-index: 2;
+    font-size: 20px;
+    position:relative;
+    z-index:3;
+    padding: -5em;
+    margin-top: -2vw;  
+    text-decoration: none;
+    color: rgba(66, 35, 26, 0.801);
+}
+a:hover{
+    color: white;
+}
+.head{
+    font-family: Averia Serif Libre;
+    color: rgba(66, 35, 26, 0.801);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: -500px;
+}
+video{
+    width:100%;
+    height:100vh
+}
+ .Computer{
+    width: 100%;
+    
+}
+.captura{
+    width: 100%;
+   
+} */
+.image{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100vh;
+     /* height:100vh */
+}
+.phone{
+    width: 100%;
+}
