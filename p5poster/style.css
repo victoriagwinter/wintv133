@@ -1,0 +1,18 @@
+html{
+    background-color: white;
+}
+.container{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+p{
+    font-family: sans sans-serif;
+    color: red;
+    text-align: center;
+}
