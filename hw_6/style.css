@@ -1,0 +1,29 @@
+html{
+  background-color: white;
+}
+
+.container{
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  font-size: 100px;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+p{
+  font-family: sans-serif;
+  color: red;
+  text-align: center;
+}
+h1{
+  font-family: Goldman;
+  position: fixed;
+align-items: center;
+  text-align: center;
+}
+.Canvas{
+  position: relative;
+  z-index: 1;
+}
