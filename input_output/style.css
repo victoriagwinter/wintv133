@@ -1,0 +1,276 @@
+body{
+    background: linear-gradient(-25deg, #d1d1ff, #f8dbff, #ffc1ec, #f3f9ff);
+    background-size: 500% 500%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.saturn{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.venus{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.jupiter{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.moon{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.uranus{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.mars{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.earth{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+.mercury{
+    max-width: 5vw;
+    max-height: 5vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+}
+h1{
+    font-family: termina, sans-serif;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+
+font-weight: bold;
+color: white;
+font-size: 40px;
+text-align: center;
+-webkit-text-stroke-width: 0.6px;
+-webkit-text-stroke-color: rgb(243, 138, 156);
+}
+p{
+
+}
+img{
+max-width: 40vw;
+border: solid 10px white;
+border-radius: 30px;
+text-align: center;
+/* margin: 0 auto; */
+box-shadow: 15px 25px rgb(194, 215, 255);
+background-repeat: repeat-x; 
+}
+.decoration{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;}
+
+
+
+#input{
+width: 10vw;
+align-content: center;
+font-family: Arial, Helvetica, sans-serif;
+background: white;
+border: 0.5px solid rgb(134, 123, 175);
+padding: 0.25rem 0.5rem;
+border-radius: 4px;
+font-size: 1rem;
+}
+#result{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}  
+
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+   
+}
+p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+color: white;
+font-size: 20px;
+text-align: center;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: -3em;;
+    gap: -10px;
+    width: 100vw
+    border: white solid;
+
+}
+h2{
+    font-family: termina, sans-serif;
+
+    font-weight: 700;
+    
+    font-style: normal;
+
+font-weight: bold;
+color: white;
+font-size: 20px;
+text-align: center;
+-webkit-text-stroke-width: 0.4px;
+-webkit-text-stroke-color: rgb(243, 138, 156);
+margin-top: -30px;
+}
+
+
+button {
+    font-size: 1rem;
+    background: white;
+    border: 0.5px solid rgb(134, 123, 175);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    color: rgb(196, 96, 196);
+    background-color: rgb(158, 232, 255);
+
+  }
+#result{
+    margin-top: 20px;
+}
+
+///NEW CODE///
+
+
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(1){
+  color: #fff;
+}
+
+section:nth-child(2){
+  color: #1D212B;
+  background: #fff;
+}
+
+section:nth-child(3){
+  color: #fff;
+}
+
+section:nth-child(4){
+  color: #c3c8d3;
+  background: #fff;
+}
+
+section .container{
+  margin: 100px;
+}
+ */
+
+section h3{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+section .cards{
+  display: flex;
+ flex-wrap: wrap;
+ max-width: 100vw;
+}
+
+section .cards .text-card{
+  background:rgb(194, 215, 255) ;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 20vw;
+}
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: white;
+  font-family: termina, sans-serif;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+  section .cards .text-card{
+      width: 20vw;
+  }
+
+  section .cards{
+    flex-direction: column;
+    width: 30vw;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.signs{
+    width: 15vw;
+    box-shadow: 1px 1px rgb(158, 255, 166);
+    align-items: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats your sign</title>
+    <style>
+        @import url("https://use.typekit.net/byn7ian.css");
+      </style>
+    <link rel="stylesheet" href="https://use.typekit.net/byn7ian.css">
+    <link rel="stylesheet" href="https://use.typekit.net/byn7ian.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="decoration">
+   <img class= "saturn" src="saturn.png" alt="">
+   <img class="venus" src="venus.jpeg">
+   <img class="jupiter" src="jupiter.jpeg">
+   <img class="moon" src="moon.jpeg">
+   <img class="uranus" src="uranus.png">
+   <img class="mars" src="mars.png">
+   <img class="earth" src="earth.png">
+   <img class="mercury" src="mercury.png">
+</div>
+    <div class="header">
+        <h1>What's your sign?</h1>
+        <h2>(Zodiac Meme Generator)</h2>
+    <p>Type your birthday and find out your zodiac sign!</p>  
+    </div>
+
+    <!-- <input class="text-box" type="text" id="input"> -->
+<div class="wrapper">
+    <input type="date" id="input" name="trip-start"
+       value="2018-07-22"
+       min="1990-01-01" max="2022-12-31">
+
+    <button onclick="showResult()">show result</button>
+</div>
+    <div id="result">
+    </div>
+    
+    <script src="script.js"></script>
+
+    <!-- <section>
+        <h1>Reveal Elements On Scroll</h1>
+      </section> -->
+      <section>
+        <div class="container reveal">
+          <h2>More about each sign</h2>
+          <div class="cards">
+            <div class="text-card">
+              <h3>Piscies</h3>
+              <img class= "signs" src="piscies.png" alt="">
+              <p>You are a water sign, mutable. Go with the flow. emotionally sensitive, gracious, and emotionally aware.</p>
+            </div>
+            <div class="text-card">
+              <h3>Aries</h3>
+              <img class= "signs" src="aries.png" alt="">
+              <p>You are a fire sign, fixed. You have a sense of adventure and love to explore. They're determined and bold, and are good at initiating new projects.</p>
+            </div>
+            <div class="text-card">
+              <h3>Taurus</h3>
+              <img class= "signs" src="taurus.png" alt="">
+              <p>You are a earth sign, fixed. While strong, also have a reputation for being stubborn. In short, Tauruses make loyal friends and fearsome enemies.</p>
+            </div>
+            <div class="text-card">
+                <h3>Gemini</h3>
+                <img class= "signs" src="gemini.png" alt="">
+                <p>You are a air sign, mutable. Geminis are flexible, extroverted, and clever, and there's never a boring moment while they're around. Their flaws include indecisiveness, impulsivity, unreliability, and nosiness, therefore don't disclose a Gemini your innermost deepest fears</p>
+              </div>
+              <div class="text-card">
+                <h3>Cancer</h3>
+                <img class= "signs" src="cancer.png" alt="">
+                <p>You are a water sign, cardinal. You are known for being emotional, nurturing, and highly intuitive, as well as sensitive and at times insecure</p>
+              </div>
+              <div class="text-card">
+                <h3>Leo</h3>
+                <img class= "signs" src="leo.png" alt="">
+                <p>You are a fire sign, fixed. You are vivacious, theatrical, and passionate, Leos love to bask in the spotlight and celebrate themselves.</p>
+              </div>
+              <div class="text-card">
+                <h3>Virgo</h3>
+                <img class= "signs" src="virgo.png" alt="">
+                <p>You are a earth sign, mutable. You are self-effacing, industrious, and practical, but under the surface, they are frequently natural, kind, and sympathetic, as befits their zodiac sign. Virgoans are methodical and quick thinkers, yet they have so much mental energy that they are frequently stressed and tense.</p>
+              </div>
+              <div class="text-card">
+                <h3>Libra</h3>
+                <img class= "signs" src="libra.png" alt="">
+                <p>You are a air sign, cardinal. Librans are extroverted, cosy, and friendly people. Librans, like the Scales that symbolise the sign, are often concerned with attaining balance, harmony, peace, and justice in the world. With their vast stores of charm, intelligence, frankness, persuasion, and seamless connectivity, they are well-equipped to do so</p>
+              </div>
+              <div class="text-card">
+                <h3>Scorpio</h3>
+                <img class= "signs" src="scorpio.png" alt="">
+                <p>You are a water sign, fixed. Scorpios are famously discreet and even secretive, with an air of mystery around them. Other personality traits include fearlessness, boldness (thanks to Mars), passion, creativity, and fierce loyalty. </p>
+              </div>
+              <div class="text-card">
+                <h3>Sagittarius</h3>
+                <img class= "signs" src="sagittarius.png" alt="">
+                <p> You are a fire sign, mutable. A Sagittarius values independence and the ability to do what they want, when they want, above all else. They are adventurers, risk-takers, and have a sharp business and sports mentality. Sagittarius natives are known for their emotional intelligence, which helps them to connect with others. </p>
+              </div>
+              <div class="text-card">
+                <h3>Capricorn</h3>
+                <img class= "signs" src="capricorn.png" alt="">
+                <p>You are an earth sign, cardinal. You are ambitious, determined, materialistic and strong. You will keep going when others would've given up ten miles back. This makes them great partners in life, as well as friends or collaborators. Capricorns tend to keep small circles, but are loyal and supportive of their friends and loved ones.</p>
+              </div>
+              <div class="text-card">
+                <h3>Aquarius</h3>
+                <img class= "signs" src="aquarius.png" alt="">
+                <p>You are a air sign, fixed. Aquarius people are advanced, self-reliant, clever, exceptional, and optimistic. Air is their elemental sign. Aquarians, like air, lack a distinct form and appear to resist classification.. </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <script type="text/javascript">
+      window.addEventListener('scroll', reveal);
+  
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+  
+        for(var i = 0; i < reveals.length; i++){
+  
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+  
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+      </script>
+</body>
+</html>
